@@ -20,6 +20,9 @@ if (strlen($name) > 3 && filter_var($email, FILTER_VALIDATE_EMAIL) && strpos($em
     echo '<br>age: '.$age;
     echo '<br><br><strong>accesso riuscito!</strong>';
 } else {
+    echo '<br>name: '.$name;
+    echo '<br>email: '.$email;
+    echo '<br>age: '.$age;
     echo '<br><strong>accesso negato</strong>';
 }
 
