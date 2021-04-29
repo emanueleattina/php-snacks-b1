@@ -10,12 +10,17 @@
 
 $name = $_GET['name'];
 $email = $_GET['email'];
-$age = $_GET['age '];
+$age = $_GET['age'];
 
-if (filter_var($email, FILTER_VALIDATE_EMAIL) && strpos($email, '@') && strpos($email, '.')) {
-    echo 'seue';
+echo 'incolla sopra: ?name=INSERISCI&email=INSERISCI&age=INSERISCI<br>';
+
+if (strlen($name) > 3 && filter_var($email, FILTER_VALIDATE_EMAIL) && strpos($email, '@') && strpos($email, '.') && is_numeric($age)) {
+    echo '<br>name: '.$name;
+    echo '<br>email: '.$email;
+    echo '<br>age: '.$age;
+    echo '<br><br><strong>accesso riuscito!</strong>';
 } else {
-    echo 'non seue';
+    echo '<br><strong>accesso negato</strong>';
 }
 
 ?>

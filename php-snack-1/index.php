@@ -31,11 +31,10 @@ for ($i = 1; $i < count($partita); $i++) { ?>
 }
 */
 
-for ($i = 1; $i < count($partita); $i++) {
     echo $partita['squadra_di_casa']['nome']." - ";
     echo $partita['squadra_ospite']['nome']. " | ";
     echo $partita['squadra_di_casa']['punti']." - ";
     echo $partita['squadra_ospite']['punti'];
-}
+
 
 ?>
